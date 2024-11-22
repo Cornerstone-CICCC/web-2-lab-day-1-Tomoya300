@@ -6,8 +6,46 @@
   <title>City/Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <!-- YOUR CODE HERE -->
+<body class="flexible">
+  <div id="search_container">
+    <div class="search_area">
+      <input type="search" id="search" name="search" placeholder="Enter city name..." class="flexible">
+      <button id="search_btn" class="flexible">Search</button>
+    </div>
+  </div>
+  <div class="search_result hidden" id="search_result">
+    <div class="city_container flexible" id="city_container">
+      <div class="city_info">
+        <p id="city_name"></p>
+        <p id="city_temp"><span id="temperature"></span>°C</p>
+      </div>
+    </div>
+    <div class="weather_container" id="weather_container">
+      <table class="flexible">
+        <tbody>
+          <tr>
+            <td class="flexible"><strong>Country</strong></td>
+            <td id="country" class="td_right flexible"></td>
+          </tr>
+          <tr>
+            <td class="flexible"><strong>Timezone</strong></td>
+            <td id="timezone" class="td_right flexible"></td>
+          </tr>
+          <tr>
+            <td class="flexible"><strong>Population</strong></td>
+            <td id="population" class="td_right flexible"></td>
+          </tr>
+          <tr>
+            <td class="flexible"><strong>Tomorrow's Forecast</strong></td>
+            <td class="td_right flexible">
+              Low:<span id="forecast_min"></span>°C<br>
+              Max:<span id="forecast_max"></span>°C
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   
   <script src="./app.js"></script>
 </body>

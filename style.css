@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search_container {
+    padding: 15px 0;
+}
+
+.search_area {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input {
+    width: 45vw;
+}
+
+.search_result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city_container {
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.city_info {
+    display: flex;
+    width: 49vw;
+    height: fit-content;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    .city_info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.city_info > p {
+    font-weight: 600;
+}
+
+#city_name {
+    margin-right: auto;
+    font-size: 30px;
+}
+
+#city_temp {
+    font-size: 26px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.day {
+    background-image: url("./images/day.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.night {
+    background-image: url("./images/night.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+table {
+    margin-top: 20px;
+    width: 49vw;
+}
+
+table, table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px 0 5px 5px;
+}
+
+tr:last-child > td:first-child {
+    width: 0;
+    white-space: nowrap;
+    padding-right: 3vw;
+}
+
+@media screen and (max-width:360px) {
+    tr:last-child > td:first-child {
+        white-space: wrap;
+    }
+}
+
+.td_right {
+    font-weight: 540;
+    padding-right: 5px;
+}
